@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+    "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<!-- Register beans here -->
+
+<beans>
+
+
+<bean id="thePlayer" class="com.cts.Spring_Project.Player">
+
+<!-- Setter injection goes here -->
+
+
+ <!-- <property name="name" value="Rohit"></property>
+ 
+ <property name="game" value="Cricket"></property>
+ 
+ <property name="rank" value="2"></property>-->
+
+
+<!-- Constructor Injection goes like this: -->
+
+
+ <constructor-arg value="Rohit"/>
+
+<constructor-arg value="Cricket"/>
+
+<constructor-arg value="2" index="2"/>
+
+</bean>
+
+</beans>
